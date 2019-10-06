@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ItemDetailActivity"
+    tools:ignore="MergeRootFrame">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <TextView
+                android:id="@+id/detailCounterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="20dp"
+                android:text="---"
+                android:textColor="@color/colorCounter"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            <TextView
+                android:id="@+id/detailName"
+                android:layout_width="302dp"
+                android:layout_height="104dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:gravity="bottom|left"
+                android:text="title"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorText"
+                android:textSize="28dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:layout_anchor="@+id/item_detail_container"
+                app:layout_anchorGravity="top|end"
+                app:maxImageSize="40dp"
+                app:srcCompat="@drawable/delete" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/editTitleBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="15dp"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:layout_anchor="@+id/item_detail_container"
+                app:layout_anchorGravity="center|end"
+                app:maxImageSize="40dp"
+                app:srcCompat="@drawable/edit" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/item_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorBar"
+        app:layout_anchor="@+id/item_detail_container"
+        app:layout_anchorGravity="bottom|end"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/save" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorBar"
+        app:layout_anchor="@+id/item_detail_container"
+        app:layout_anchorGravity="bottom|start"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/cancel" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

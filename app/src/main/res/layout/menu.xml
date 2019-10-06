@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <item
+        android:id="@+id/set_password"
+        android:title="set server password"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/work_status"
+        android:title="workmanager status"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/cancel_work"
+        android:title="cancel work"
+        app:showAsAction="always" />
+</menu>

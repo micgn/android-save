@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entryText"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:inputType="textMultiLine|textImeMultiLine"
+    android:padding="16dp"
+    android:textIsSelectable="true"
+    tools:context=".ItemDetailFragment"
+    android:autofillHints="item"
+    android:textColor="@color/colorText" />

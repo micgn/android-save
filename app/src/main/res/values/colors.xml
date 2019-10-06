@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBar">#5A6969</color>
+    <color name="colorBackground">#242727</color>
+    <color name="colorBackgroundLocked">#8A7E21</color>
+    <color name="colorText">#FFEB3B</color>
+    <color name="colorPrimary">#5A6969</color>
+    <color name="colorPrimaryDark">#242727</color>
+    <color name="colorLocked">#E91E63</color>
+    <color name="colorOnline">#5B9797</color>
+    <color name="colorOffline">#FF9800</color>
+    <color name="colorQuestion">#FF9800</color>
+    <color name="colorMenuText">#EBE5DD</color>
+    <color name="colorCounter">#FFFFFF</color>
+</resources>
